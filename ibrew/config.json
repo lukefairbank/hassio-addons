@@ -4,6 +4,12 @@
   "slug": "ibrew",
   "description": "Test on iBrew - Experimental stage using default port 2080",
   "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
   "boot": "auto",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:2080]",
   "host_network": true,
