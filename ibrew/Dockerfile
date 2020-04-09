@@ -9,7 +9,7 @@ RUN wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.go
 RUN pip install tornado==4.2.1
 RUN tar -zxf pybonjour-1.1.1.tar.gz
 RUN cd pybonjour-1.1.1 && /usr/bin/python setup.py install
-RUN https://github.com/lukefairbank/iBrew.git
+RUN git clone https://github.com/lukefairbank/iBrew.git
 
 EXPOSE 2080
 
