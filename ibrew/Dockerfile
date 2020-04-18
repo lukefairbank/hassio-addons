@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 RUN apk update && apk add bash avahi-tools avahi-compat-libdns_sd screen python git py-tornado jq python git py-pip make sudo wget
 WORKDIR /home/app
 RUN wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pybonjour/pybonjour-1.1.1.tar.gz
-RUN pip install tornado==4.2.1
+RUN pip install tornado==4.2
 RUN tar -zxf pybonjour-1.1.1.tar.gz
 RUN cd pybonjour-1.1.1 && /usr/bin/python setup.py install
 RUN git clone https://github.com/lukefairbank/iBrew.git
